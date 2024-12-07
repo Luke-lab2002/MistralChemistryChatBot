@@ -22,7 +22,7 @@ services:
     container_name: qdrant
     environment:
       - QDRANT__DEFAULT__HOMEDIR=/qdrant/storage
-      - QDRANT__SERVICE__PORT=6333
+      - QDRANT__SERVICE__PORT=${VECTORDB_PORT}
     ports:
       - "${VECTORDB_PORT}:${VECTORDB_PORT}"  # Ánh xạ cổng 6333 của Qdrant vào cổng 6333 của máy chủ
     volumes:
