@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: MistralChemistry
+    ports:
+      - "${PORT}:${PORT}"  # Ánh xạ cổng 5000 của container vào cổng 5000 của máy chủ
+    environment:
+      - FLASK_ENV=development  # Cấu hình Flask ở chế độ phát triển
+      - PORT=${PORT}
+    restart: always  # Khởi động lại ứng dụng nếu có lỗi
+    volumes:
+      - .:/app  # Dùng volume để chia sẻ mã nguồn từ máy chủ vào container
+    depends_on:
+      - qdrant  # Đảm bảo Flask được khởi động sau khi Qdrant đã sẵn sàng
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant
+    environment:
+      - QDRANT__DEFAULT__HOMEDIR=/qdrant/storage
+      - QDRANT__SERVICE__PORT=6333
+    ports:
+      - "${VECTORDB_PORT}:${VECTORDB_PORT}"  # Ánh xạ cổng 6333 của Qdrant vào cổng 6333 của máy chủ
+    volumes:
+      - qdrant_storage:/qdrant/storage  # Lưu trữ dữ liệu của Qdrant
+    restart: always  # Khởi động lại Qdrant nếu có lỗi
+
+volumes:
+  qdrant_storage:
+    driver: local

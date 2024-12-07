@@ -1,0 +1,12 @@
+flask~=3.1.0
+langchain-core~=0.3.21
+langchain-nvidia-ai-endpoints
+langchain-huggingface
+langchain-text-splitters~=0.3.2
+langchain-community~=0.3.9
+langchain-qdrant
+qdrant-client
+langchain_anthropic
+python-dotenv~=1.0.1
+tqdm~=4.67.1
+einops

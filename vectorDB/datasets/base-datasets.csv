@@ -1,0 +1,21 @@
+Id,Questions,Answers,Theory
+1,Tính Số mol của 300 gam CaCO3,Giải: n = m/M = 300/100 = 3 mol,"Công thức tính số mol n = m/M, CaCO3 có khối lượng nguyên tử là 100 (Ca = 40, C = 12, O=16)"
+2,Tính khối lượng của 2 mol Fe2(SO4)3,Giải: n = m/M -> m = n.m = 2*400 = 800 gam,"Công thức tính số mol n = m/M, Fe2(SO4)3 Có khối lượng nguyên tử là 400 (Fe = 56, S = 32, O = 16)"
+3,"Tìm kim loại X biết 0,5 mol nặng 32 gam","Giải: n= m/M -> M = m/n = 32/0,5 = 64 => X là đồng","Công thức tính số mol n = m/M, Cu có khối lượng nguyên tử bằng 64"
+4,"Khối lượng của 0.8 mol BaCO3 là: A. 157,6g B.128,7g C.158g D.137,9g","Giải: n = m/M -> m = n.M = 0,8*(137+12+16*3)=157,6 gam => đáp án A","Công thức tính số mol n = m/M, BaCO3 có khối lượng nguyên tử là 197 (Ba=137, C=12, O=16)"
+5,"Số mol của 74,2 gam Na2CO3 là: A.0,8 mol B.0,7 mol C.0,75 mol D.0,6 mol","Giải: n = m/M -> n = 74,2/(23*2 + 12 + 16*3)=0,7 mol => đáp án B","Công thức tính số mol n = m/M, Na2CO3 có khối lượng nguyên tử là 106 (Na=23, C=12, O=16)"
+6,"Số mol của 140,4 gam NaCl là: A.2,1 mol B.2,2 mol C.2,3 mol D.2,4 mol","Giải: n = m/M -> n = 140,4/(23+35,5) = 2,4 => đáp án D ","Công thức tính số mol n = m/M,  NaCl có khối lượng nguyên tử là 58,5 (Na=23, Cl=35,5)"
+7,"Khối lượng của 0,9 mol SO2 là: A.54,4 gam B.57,6 gam C.58,5 gam D.59,85 gam","Giải: n = m/M -> m = 0.9*(32+16*2) = 57,6 gam => đáp án B","Công thức tính số mol n = m/M,  SO2 có khối lượng nguyên tử là 64 (S=32, O=16)"
+8,"Khối lượng của 1,2 mol KMnO4 là: A.173, 8 gam B.189,6 gam C.188,4 gam D.190 gam","Giải: n = m/M -> m =  1,2*158 = 189,6 gam => đáp án B","Công thức tính số mol n = m/M,  KMnO4 có khối lượng nguyên tử là 158 (K=39,Mn=55 ,O=16)"
+9,"Số mol của 16 gam S là: A.0,4 mol B.0,5 mol C.0,2 mol D.0,3 mol","Giải: n = n/M -> n = 16/32 = 0,5 gam => đáp án B","Công thức tính số mol n = m/M,  S có khối lượng nguyên tử là 32"
+10,"Biết 0,005 mol y nặng 0,48 gam. Chất Y là: A.Cu B.Fe C.Zn D.Mn","Giải: n= m/M -> M = m/n = 0,84/0,015 = 56 => đáp án B","Công thức tính số mol n = m/M, Fe có khối lượng nguyên tử là 56"
+11,"Tìm chất X biết 0,14 mol X nặng 9,1 gam A.Fe B.Cu C.K D. ZN ","Giải: n= m/M -> M = m/n = 9,1/0,14 = 65 => đáp án D","Công thức tính số mol n = m/M, Zn có khối lượng nguyên tử là 65"
+12,"Tính khối lượng mol của hợp chất M biết 0,12 mol M nặng 11,88 gam A.97 B.98 C.99 D.100 ","Giải: n= m/M -> M = m/n = 11,88/0,12 = 99 => đáp án C ",Công thức tính số mol n = m/M
+13,Tính Số mol HCl trong 100 ml dung dịch HCl 1M,Giải: CM = n/V -> n = CM*V = 1*0.1 = 0.1 mol,Công thức tính nồng độ mol các chất trong dung dịch CM = n/V
+14,"Tính thể tích dung dịch HNO3 2M biết số mol HNO3 là 0,2 mol ",Giải: CM = n/V -> V = n/CM = 0.2/2 = 0.1 lít = 100ml,Công thức tính nồng độ mol các chất trong dung dịch CM = n/V
+15,"Tính nồng độ mol của 500 ml dung dịch chứa 0,2 mil NaOH.","Giải: CM = n/V = 0,2/0,5 = 0,4M ",Công thức tính nồng độ mol các chất trong dung dịch CM = n/V
+16,"Thể tích dung dịch KCl 1M biết số mol KCl là 0,5 mol là A.200 ml B.300 ml C. 400 ml D.500 ml","Giải: CM = n/V -> V = n/CM = 0,5/1 = 0,5 lit = 500 ml => đáp án D",Công thức tính nồng độ mol các chất trong dung dịch CM = n/V
+17,Xin chào,"Chào bạn, tôi là Mistral-Chem và được tạo ra bởi tác giả Cương Ngốc","Đây là câu chào hỏi, và bạn sẽ chào hỏi lại và giới thiệu về bản thân và tác giả Cương Ngốc"
+18,Bạn là ai?,Tôi là Mistral-chem và tôi được tạo ra bởi tác giả Cương Ngốc,"Đây là câu hỏi thông tin bản thân, hãy trả lời với tên mình là Mistral-chem(đây là tên mà tác giả đặt cho bạn) và Cương Ngốc là tên của tác giả"
+19,"Xin chào, Bạn là ai vậy?","Chào bạn, tôi là Mistral-Chem và được tạo ra bởi tác giả Cương Ngốc","Đây là câu chào hỏi, và bạn sẽ chào hỏi lại và giới thiệu về bản thân và tác giả Cương Ngốc"
+20,Hello,"Chào bạn, tôi là Mistral-Chem và được tạo ra bởi tác giả Cương Ngốc","Đây là câu chào hỏi, và bạn sẽ chào hỏi lại và giới thiệu về bản thân và tác giả Cương Ngốc"
