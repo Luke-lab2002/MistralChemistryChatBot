@@ -1,12 +1,21 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from vectorDB.connection import vector_store
+from qdrant_client import models
 import tqdm
 import os
+from connection import client
 
+collection_name="chemistry"
 data_dir = "VectorDB/datasets"
 
-def create_vectors(directory):
+client.create_collection(
+    collection_name=collection_name,
+    vectors_config=models.VectorParams(size=1024, distance=models.Distance.COSINE),
+)
+
+
+def add_dataset(directory):
     print("Creating vectors database:")
     datasets = os.listdir(directory)
     for dataset in tqdm.tqdm(datasets):
@@ -23,5 +32,5 @@ def create_vectors(directory):
     print("Done")
     return vector_store
 
-
-vector_db = create_vectors(data_dir)
+if __name__ == "__main__":
+    vector_store = add_dataset(data_dir)

@@ -1,8 +1,8 @@
-from vectorDB.create_vector_store import vector_db
+from vectorDB.connection import vector_store
 from template.chatTemplate import chatTemplate
 
 def retrieve(query):
-    retrieve_docs = vector_db.similarity_search(query)
+    retrieve_docs = vector_store.similarity_search(query)
     return retrieve_docs
 
 def prompt(chat_history):
