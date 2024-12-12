@@ -13,8 +13,3 @@ def prompt(chat_history):
 
     return prompt_content
 
-if __name__ == '__main__':
-    chat_history = [
-        {"role":"user", "content":"Hello, World!"},
-    ]
-    prompt(chat_history)

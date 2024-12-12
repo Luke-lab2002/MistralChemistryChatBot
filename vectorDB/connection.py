@@ -7,8 +7,6 @@ load_dotenv()
 
 client = QdrantClient(url=os.getenv("VECTORDB_URL"))
 
-
-
 vector_store = QdrantVectorStore(
     client=client,
     collection_name="chemistry",
