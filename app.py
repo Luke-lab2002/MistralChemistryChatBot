@@ -16,6 +16,10 @@ def predict():
     data = request.get_json()
     #
     conversation_content = data["conversation"]
+    print(conversation_content)
+
+
+
     result = generation(conversation_content)
 
     return jsonify({"message": result})

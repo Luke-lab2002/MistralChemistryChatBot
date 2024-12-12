@@ -16,6 +16,9 @@ services:
       - .:/app  # Dùng volume để chia sẻ mã nguồn từ máy chủ vào container
     depends_on:
       - qdrant  # Đảm bảo Flask được khởi động sau khi Qdrant đã sẵn sàng
+    networks:
+      - chemistry_shared_network
+
 
   qdrant:
     image: qdrant/qdrant:latest
@@ -28,7 +31,15 @@ services:
     volumes:
       - qdrant_storage:/qdrant/storage  # Lưu trữ dữ liệu của Qdrant
     restart: always  # Khởi động lại Qdrant nếu có lỗi
+    networks:
+      - chemistry_shared_network
 
 volumes:
   qdrant_storage:
     driver: local
+
+networks:
+  chemistry_shared_network:
+    external: true
+    name: chemistry_shared_network
+

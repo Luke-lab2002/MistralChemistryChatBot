@@ -12,3 +12,9 @@ def prompt(chat_history):
     prompt_content = chatTemplate(query=query,chat_history=chat_history ,docs_content=docs_content)
 
     return prompt_content
+
+if __name__ == '__main__':
+    chat_history = [
+        {"role":"user", "content":"Hello, World!"},
+    ]
+    prompt(chat_history)
