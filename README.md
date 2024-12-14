@@ -9,7 +9,7 @@
 ## Setup
 
 Create your file ```.env```:
-```bash
+```
 PORT= # PORT
 VECTORDB_PORT= # vectordb port
 VECTORDB_URL= # url vectordb:vectordb port
@@ -20,7 +20,7 @@ EMBEDDING_MODEL_NAME= #name embedding model
 ### Docker
 
 To running project by docker:
-```
+```bash
 git clone https://github.com/Luke-lab2002/MistralChemistryChatBot.git
 
 cd MistralChemistryChatBot
