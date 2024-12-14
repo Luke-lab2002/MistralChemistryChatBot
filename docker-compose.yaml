@@ -9,11 +9,11 @@ services:
     ports:
       - "${PORT}:${PORT}"  # Ánh xạ cổng 5000 của container vào cổng 5000 của máy chủ
     environment:
-      - FLASK_ENV=development  # Cấu hình Flask ở chế độ phát triển
+      - FLASK_ENV=development  # config flask to development
       - PORT=${PORT}
-    restart: always  # Khởi động lại ứng dụng nếu có lỗi
+    restart: always  # restart application when error
     volumes:
-      - .:/app  # Dùng volume để chia sẻ mã nguồn từ máy chủ vào container
+      - .:/app  # Dùng volume để chia sẻ mã nguồn từ máy chủ vào container/ use a volume to share source code from host to container
     depends_on:
       - qdrant  # Đảm bảo Flask được khởi động sau khi Qdrant đã sẵn sàng
     networks:
@@ -29,7 +29,7 @@ services:
     ports:
       - "${VECTORDB_PORT}:${VECTORDB_PORT}"  # Ánh xạ cổng 6333 của Qdrant vào cổng 6333 của máy chủ
     volumes:
-      - qdrant_storage:/qdrant/storage  # Lưu trữ dữ liệu của Qdrant
+      - qdrant_storage:/qdrant/storage  # Lưu trữ dữ liệu của Qdrant /  Qdrant 's volume data
     restart: always  # Khởi động lại Qdrant nếu có lỗi
     networks:
       - chemistry_shared_network

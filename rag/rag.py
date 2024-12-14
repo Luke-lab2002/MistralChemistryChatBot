@@ -9,7 +9,7 @@ def prompt(chat_history):
     query = chat_history[-1]["content"]
     docs_content = "\n\n".join(doc.page_content for doc in retrieve(query=query))
 
-    prompt_content = chatTemplate(query=query,chat_history=chat_history ,docs_content=docs_content)
+    prompt_content = chatTemplate(query=query, chat_history=chat_history, docs_content=docs_content)
 
     return prompt_content
 
